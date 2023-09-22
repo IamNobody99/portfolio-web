@@ -77,7 +77,7 @@
                     <h1 class="font-bold text-primary text-2xl mb-3 lg:text-3xl uppercase">About Me</h1>
                     <h2 class="font-medium text-dark text-lg mb-3 lg:text-xl">
                         <span id="typed-effect">Hard Working</span>
-                        <span class="typed-cursor" aria-hidden="true">|</span>
+                        <span class="typed-cursor" aria-hidden="true"></span>
                     </h2>
                     <p class="font-medium text-base text-secondary lg:text-lg">I am a computer science undergraduate student with a keen interest in data science, mobile development, and backend development. I have proficiency in programming languages such as Kotlin, Python, Java, HTML, CSS, Javascript, and MySQL. I am also a hardworking individual and effective communicator. I am an individual who greatly enjoys new things that provide benefits to everyone.</p>
                 </div>
@@ -169,7 +169,7 @@
             <div class="w-full px-4">
                 <div class="max-w-xl mx-auto text-center mb-16">
                     <h1 class="font-bold text-primary text-2xl mb-0 lg:text-3xl">Contact</h1>
-                    <h2 class="font-semibold text-secondary text-xs md:text-sm mt-2 mb-3 lg:text-lg">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique perferendis veritatis illo sunt eligendi qui sapiente aut voluptatem ipsa consequuntur?</h2>
+                    <h2 class="font-semibold text-secondary text-xs md:text-sm mt-2 mb-3 lg:text-lg">If you are interested in collaborating or working together with me, I would greatly appreciate it if you could provide contact information below so that I can reach out to you to explore and discuss potential collaboration opportunities in the future.</h2>
                 </div>
             </div>
             <form>
@@ -366,46 +366,11 @@
     <script src="dist/js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
-        var typed = new Typed("#typing-effect",{
-            strings: ["Hard Working", "Persistent", "Responsible", "Adaptive"],
-            typeSpeed: 200, loop: true, 
+        var typed = new Typed('#typed-effect', {
+          strings: ["Hard Working", "Persistent", "Responsible", "Adaptive"],
+          loop: true, typeSpeed:300 // Default value
         });
     </script>
-    <style data-typed-js-effect-css="true">
-
-     
-        .typed-cursor{
-          opacity: 1;
-        }
-        .typed-cursor.typed-cursor--blink{
-          animation: typedjsBlink 0.7s infinite;
-          -webkit-animation: typedjsBlink 0.7s infinite;
-                  animation: typedjsBlink 0.7s infinite;
-        }
-        @keyframes typedjsBlink{
-          50% { opacity: 0.0; }
-        }
-        @-webkit-keyframes typedjsBlink{
-          0% { opacity: 1; }
-          50% { opacity: 0.0; }
-          100% { opacity: 1; }
-        }
-      
-
-    </style>
-    <!--  #typed-effect {
-            opacity: 0; /* Mulai dengan opasitas nol (elemen tersembunyi) */
-            animation: fadeIn 1s ease-in-out forwards; /* Animasi fade-in selama 1 detik */
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1; /* Akhiri dengan opasitas satu (elemen terlihat) */
-            }
-        } -->
 </body>
 </html
 
